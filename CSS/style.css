@@ -1,0 +1,271 @@
+/*Main Styles*/
+
+body {
+  background-color: #A4907C;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+h1 {
+  color: #98EECC;
+  font-family: "Copperplate Gothic";
+}
+
+.subheading {
+  color: #D0F5BE;
+  font-family: "Copperplate Gothic";
+}
+
+p {
+  color: #FBFFDC;
+  size: 1rem;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+hr {
+  color: #98EECC;
+}
+
+a {
+  text-decoration: none;
+  color: #8C3333;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #98EECC;
+}
+
+a:active {
+  text-decoration: none;
+  color: #FBFFDC;
+}
+
+
+footer {
+  margin: auto 10rem;
+  text-align: center;
+}
+
+footer > a > svg {
+  height: 3rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.indent {
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hide {
+  list-style-type: none;
+}
+
+.red {
+  color: red;
+}
+
+.settings {
+  color: #98EECC;
+  font-family: 'Anonymous Pro', monospace;
+  background-color: #A4907C;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main {
+  margin: 10rem;
+}
+
+#skills > ul > li {
+  list-style-type: none;
+}
+
+
+/*Bootstrap Edits*/
+.btn-outline-secondary {
+  color: #98EECC;
+  font-family: 'Anonymous Pro', monospace;
+  background-color: #A4907C;
+}
+
+#about2 {
+  color: #98EECC;
+  font-family: 'Anonymous Pro', monospace;
+  background-color: #A4907C;
+}
+
+#about2:hover {
+  color: #98EECC;
+  background-color: #FBFFDC;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+#contact2 {
+  color: #98EECC;
+  font-family: 'Anonymous Pro', monospace;
+  background-color: #A4907C;
+}
+
+#contact2:hover {
+  color: #98EECC;
+  background-color: #FBFFDC;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+#home1 {
+  color: #98EECC;
+  font-family: 'Anonymous Pro', monospace;
+  background-color: #A4907C;
+}
+
+#home1:hover {
+  color: #98EECC;
+  background-color: #FBFFDC;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+#home2 {
+  color: #98EECC;
+  font-family: 'Anonymous Pro', monospace;
+  background-color: #A4907C;
+}
+
+#home2:hover {
+  color: #98EECC;
+  background-color: #FBFFDC;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.btn-outline-secondary:hover {
+  color: #98EECC;
+  background-color: #FBFFDC;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+
+
+/*About Me Page*/
+.background {
+  background-color: #A4907C;
+}
+
+.link {
+  text-decoration: none;
+  color: #8C3333;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #98EECC;
+}
+
+.link:active {
+  text-decoration: none;
+  color: #FBFFDC;
+}
+
+figcaption {
+  font-size: 0.75rem;
+}
+
+.round {
+  border-radius: 6.25%;
+}
+
+/*Grid Styling*/
+
+
+.subcontainer1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr auto;
+  gap: 3rem;
+}
+
+.imgright {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem
+}
+
+.text {
+  order: 1;
+  grid-column: span 2;
+}
+
+figure {
+  order: 2;
+}
+
+#contact {
+  margin: auto 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 770px) {
+
+  body {
+    max-width: 90%;
+  }
+
+  main {
+    margin: 1rem auto;
+    max-width: 90%;
+  }
+
+  .subcontainer1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr auto;
+    gap: 1rem;
+  }
+
+  .email {
+    word-wrap: break-word;
+  }
+
+  footer {
+    margin: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "text text text"
+    "facebook instagram twitter"
+    "linkedin github 0";
+  }
+
+  .footer-text {
+    grid-area: text;
+  }
+
+  .facebook {
+    grid-area: facebook;
+  }
+
+  .instagram{
+    grid-area: instagram;
+  }
+
+  .twitter{
+    grid-area: twitter;
+  }
+
+  .linkedin {
+    grid-area: linkedin;
+  }
+
+  .github {
+    grid-area: github;
+  }
+}
